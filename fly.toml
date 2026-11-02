@@ -1,0 +1,17 @@
+app = "albo-online-monitor-v2-fspolg"
+primary_region = "fra"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[processes]
+  worker = "node index.js"
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[vm]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1
