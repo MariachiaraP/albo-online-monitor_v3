@@ -1,8 +1,7 @@
 app = "albo-online-monitor-v2-fspolg"
 primary_region = "fra"
 
-[build]
-  dockerfile = "Dockerfile"
+
 
 [processes]
   worker = "node index.js"
